@@ -12,7 +12,12 @@ export default defineConfig({
 	// Old blog template pages
 	redirects: {
 		"/blog": "/services",
-		"/blog/[...slug]": "/services",
+		"/blog/first-post": "/services",
+		"/blog/second-post": "/services",
+		"/blog/third-post": "/services",
+		"/blog/markdown-style-guide": "/services",
+		"/blog/using-mdx": "/services",
+		"/rss.xml": "/",
 	},
 	adapter: cloudflare({
 		platformProxy: {
