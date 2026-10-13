@@ -75,11 +75,11 @@ export const services: Service[] = [
 		blocks: [
 			{
 				title: "Speed is money",
-				text: "Google penalises slow websites and people leave before they finish loading. My pages are prepared before anyone asks for them and the server hands them over ready-made. That's why they open instantly, even on a weak mobile signal.",
+				text: "Google penalises slow websites and people leave before the page finishes loading. My pages are prepared before anyone asks for them and the server hands them over ready-made. That's why they open instantly, even on a weak mobile signal.",
 			},
 			{
 				title: "Every screen has a job",
-				text: "No empty decoration. First we decide what the visitor should do in each section, then I design it. It looks expensive because it's orderly, not because of special effects.",
+				text: "No empty decoration. First we decide what the visitor should do in each section, then I design it. It looks expensive because everything is in its place, not because of special effects.",
 			},
 		],
 		pricing: {
@@ -195,7 +195,7 @@ export const services: Service[] = [
 		slug: "platform-migration",
 		group: "build",
 		name: "From rented to owned",
-		short: "I move your store off a monthly-fee platform onto one you own, without losing sales or Google.",
+		short: "I move your store off a monthly-fee platform onto one you own, without losing sales or Google rankings.",
 		price: "fixed quote",
 		metaTitle: "Move your store off a rented platform · Víctor Kuminov",
 		metaDescription:
@@ -312,7 +312,7 @@ export const services: Service[] = [
 			},
 			{
 				q: "Who publishes it in the stores?",
-				a: "I do. I prepare listings, screenshots and the Apple and Google review. The developer account is in your name; the app is yours.",
+				a: "I do. I prepare the listings and screenshots and handle Apple and Google review. The developer account is in your name; the app is yours.",
 			},
 		],
 		related: ["online-stores", "ai", "maintenance"],
@@ -366,7 +366,7 @@ export const services: Service[] = [
 		faq: [
 			{
 				q: "What if the audit says I need to start over?",
-				a: "I'll tell you straight, with the reasons and what it would cost. Sometimes rebuilding is cheaper than patching, and sometimes fixing three things is enough.",
+				a: "I'll tell you straight, with the reasons and what it would cost. Sometimes rebuilding costs less than patching, and sometimes fixing three things is enough.",
 			},
 			{
 				q: "Someone else built my site. Can you work on it?",
@@ -467,7 +467,7 @@ export const services: Service[] = [
 			},
 			{
 				title: "Payment, tips and bookings",
-				text: "Paying from the phone, tips, table bookings and a link to your till system.",
+				text: "Paying from the phone, tips, table bookings and integration with your POS system.",
 				badge: "dev",
 			},
 		],
@@ -519,7 +519,7 @@ export const services: Service[] = [
 		],
 		proof: {
 			title: "40+ countries",
-			text: "A historic craft manufacturer has been selling with my store for more than ten years. Its pieces travel from New Zealand and Bali to Australia, the Americas and all of Europe.",
+			text: "A historic craft manufacturer has been selling with my store for more than ten years. Its pieces ship to New Zealand, Bali, Australia, the Americas and all over Europe.",
 		},
 		pricing: {
 			price: "from €7,500",
@@ -531,7 +531,7 @@ export const services: Service[] = [
 		faq: [
 			{
 				q: "Which country should I start with?",
-				a: "Wherever you already see signals: tourists who buy from you, orders by email, followers on social media. We'll look at the data together.",
+				a: "Wherever you already see demand: tourists who buy from you, orders by email, followers on social media. We'll look at the data together.",
 			},
 			{
 				q: "Can I start with just an English website?",
@@ -613,7 +613,7 @@ export const services: Service[] = [
 			},
 			{
 				title: "Security and updates",
-				text: "I keep the site up to date and apply security improvements. You don't have to think about it.",
+				text: "I keep the site up to date and apply security patches. You don't have to think about it.",
 			},
 		],
 		pricing: {
@@ -632,7 +632,7 @@ export const services: Service[] = [
 			},
 			{
 				q: "Is there a minimum term?",
-				a: "No. Month to month. I stay because the work is useful, not because of a contract.",
+				a: "No. Month to month. If you stay, it's because the work pays off, not because of a contract.",
 			},
 		],
 		related: ["seo-ai-visibility", "rescue", "online-stores"],

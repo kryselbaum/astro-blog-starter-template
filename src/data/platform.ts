@@ -123,8 +123,8 @@ export const platform: FeatureGroup[] = [
 		status: "live",
 		items: [
 			{
-				title: "Said and done",
-				text: "A voice or text message to the bot: \"raise cheese by 10%\", \"hide what's out of stock\". The bot shows how it understood and, once you confirm, the change appears on the site.",
+				title: "No sooner said than done",
+				text: "A voice or text message to the bot: \"raise cheese prices by 10%\", \"hide what's out of stock\". The bot shows how it understood and, once you confirm, the change appears on the site.",
 			},
 			{
 				title: "Three permission levels",
@@ -151,7 +151,7 @@ export const platform: FeatureGroup[] = [
 			},
 			{
 				title: "Payment, tips and bookings",
-				text: "Paying from the phone, tips, table bookings and a link to the till system.",
+				text: "Paying from the phone, tips, table bookings and integration with your POS system.",
 				status: "dev",
 			},
 		],
@@ -227,7 +227,7 @@ export const platform: FeatureGroup[] = [
 	},
 	{
 		title: "Coming next",
-		text: "In development. I only announce it once it's proven with a real client.",
+		text: "In development. I only call it ready once it's proven with a real client.",
 		status: "dev",
 		items: [
 			{
