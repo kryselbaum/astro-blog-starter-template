@@ -17,7 +17,6 @@ export default defineConfig({
 		"/blog/third-post": "/services",
 		"/blog/markdown-style-guide": "/services",
 		"/blog/using-mdx": "/services",
-		"/rss.xml": "/",
 	},
 	adapter: cloudflare({
 		platformProxy: {
