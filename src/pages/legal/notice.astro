@@ -1,0 +1,29 @@
+---
+import Page from "../../layouts/Page.astro";
+import { CONTACT_EMAIL, CONTACT_CITY } from "../../consts";
+---
+
+<Page title="Legal notice · Víctor Kuminov" description="Legal notice for vickum.com">
+	<section class="section">
+		<div class="narrow prose">
+			<h1>Legal notice</h1>
+			<p class="muted">Draft pending review by an adviser before final publication. The Spanish version (Aviso legal at kuminov.es) prevails.</p>
+			<p>
+				In accordance with Spanish Law 34/2002 on Information Society Services and Electronic
+				Commerce (LSSI-CE), the details of the owner of this website are as follows:
+			</p>
+			<ul>
+				<li><strong>Owner:</strong> Victor Kuminov</li>
+				<li><strong>Tax ID (NIF/NIE):</strong> Z0785899V</li>
+				<li><strong>Activity:</strong> professional services in web development, e-commerce and digital marketing (self-employed)</li>
+				<li><strong>Location:</strong> {CONTACT_CITY}</li>
+				<li><strong>Email:</strong> <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></li>
+				<li><strong>Website:</strong> vickum.com</li>
+			</ul>
+			<p>
+				The owner is not responsible for misuse of the content of this website; responsibility lies
+				with the person who views or uses it.
+			</p>
+		</div>
+	</section>
+</Page>

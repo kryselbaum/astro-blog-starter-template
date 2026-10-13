@@ -1,0 +1,109 @@
+---
+import Page from "../layouts/Page.astro";
+import Faq from "../components/Faq.astro";
+import CtaBand from "../components/CtaBand.astro";
+
+const rows = [
+	{ name: "Strategic audit", href: "/rescue", what: "Tech, design and conversion of your website, store or app, with a written report.", price: "€450", time: "3-5 days", note: "Fully deducted if you hire me for the project" },
+	{ name: "Lightning-fast landing page", href: "/landing-pages", what: "Custom sales page.", price: "from €2,900", time: "2-3 weeks", note: "Typical: €2,900-6,000" },
+	{ name: "Company website", href: "/landing-pages", what: "Multi-page business website.", price: "from €4,900", time: "3-5 weeks", note: "Typical: €4,900-9,000" },
+	{ name: "Online store", href: "/online-stores", what: "A light, fast store that you own.", price: "from €7,500", time: "4-8 weeks", note: "Typical: €7,500-18,000" },
+	{ name: "From rented to owned", href: "/platform-migration", what: "Moving your store without losing rankings.", price: "fixed quote", time: "by catalogue", note: "After the audit" },
+	{ name: "iOS and Android app", href: "/apps", what: "First app from a single codebase.", price: "from €3,000", time: "from 4 weeks", note: "Typical: €3,000-12,000" },
+	{ name: "App with server and integrations", href: "/apps", what: "Full product.", price: "custom", time: "from 2 months", note: "From €12,000" },
+	{ name: "Project rescue", href: "/rescue", what: "A site or store that doesn't sell or was left half-done.", price: "from €2,500", time: "case by case", note: "Typical: €2,500-8,000" },
+	{ name: "AI for your business", href: "/ai", what: "Consulting and implementation: assistant, chat sales, automations.", price: "€75/h", time: "", note: "Implementation on a fixed quote" },
+	{ name: "QR menu and table ordering", href: "/restaurants", what: "For restaurants, cider houses and bars.", price: "custom", time: "", note: "Demo available" },
+	{ name: "One-off work", href: "/maintenance", what: "Specific fixes and changes.", price: "€90/h", time: "", note: "Packs from 5 hours" },
+];
+
+const plans = [
+	{ name: "Care", price: "€490", text: "Your site always up to date: updates, security, backups, priority support and up to 3 hours of changes every month." },
+	{ name: "Growth", price: "€950", text: "Everything in Care plus continuous improvement: conversion experiments, technical SEO, content and a monthly report with data, not fluff.", featured: true },
+	{ name: "Partner", price: "€1,900", text: "Your external digital team: top priority, a bank of development hours and quarterly strategy." },
+];
+
+const faq = [
+	{ q: "Why don't you publish an exact price?", a: "Because no two stores are the same. I publish the starting point and the typical range. You get the exact price in writing before we start, and it doesn't change along the way." },
+	{ q: "How do I pay?", a: "50% at the start and 50% at launch. For projects over €10,000, by milestones: 40/40/20." },
+	{ q: "What if I'm not satisfied?", a: "I redo it or refund you. I work for my reputation, not to bill more." },
+	{ q: "Are there mandatory monthly costs?", a: "Only the domain and hosting, which cost little for a lightweight site. Maintenance is optional, with no minimum term." },
+	{ q: "Do you charge VAT?", a: "Prices are shown without VAT. I invoice as a self-employed professional registered in Spain, and VAT is applied according to where you and your business are based." },
+];
+---
+
+<Page
+	title="Pricing · Víctor Kuminov"
+	description="Clear, senior-level pricing: landing page from €2,900, online store from €7,500, app from €3,000, audit €450, maintenance from €490/month. A real guarantee."
+>
+	<section class="hero hero--page">
+		<div class="container">
+			<p class="eyebrow">Pricing</p>
+			<h1>Clear prices, senior level</h1>
+			<p class="lead">
+				I'm not the cheapest option out there. I'm the one you won't have to pay twice. You know the
+				price and the deadline before we start, and they don't change along the way.
+			</p>
+		</div>
+	</section>
+
+	<section class="section section--tight">
+		<div class="container">
+			<table class="ptable">
+				<thead>
+					<tr><th>Service</th><th>Price</th><th>Timeline</th><th>Details</th></tr>
+				</thead>
+				<tbody>
+					{rows.map((r) => (
+						<tr>
+							<td><a href={r.href}>{r.name}</a><br /><span class="muted small">{r.what}</span></td>
+							<td class="p">{r.price}</td>
+							<td>{r.time}</td>
+							<td class="muted small">{r.note}</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+			<p class="muted small" style="margin-top:1rem">All prices + VAT.</p>
+		</div>
+	</section>
+
+	<section class="section section--alt">
+		<div class="container">
+			<div class="section-head">
+				<p class="eyebrow">After launch</p>
+				<h2>Monthly maintenance</h2>
+				<p>No minimum term. I stay because the work is useful, not because of a contract.</p>
+			</div>
+			<div class="grid grid--3">
+				{plans.map((p) => (
+					<div class:list={["card", "plan", { "plan--featured": p.featured }]}>
+						{p.featured && <span class="badge">Most popular</span>}
+						<h3>{p.name}</h3>
+						<p class="price">{p.price}<small>/month</small></p>
+						<p>{p.text}</p>
+					</div>
+				))}
+			</div>
+			<p class="muted" style="margin-top:1.5rem">
+				AI visibility add-on: €100-150/month. <a href="/seo-ai-visibility">What it is</a>
+			</p>
+		</div>
+	</section>
+
+	<section class="section section--dark">
+		<div class="container split">
+			<p class="eyebrow">Guarantee</p>
+			<p class="callout">If you're not satisfied with the result, I redo it or give you your money back. That simple.</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container split">
+			<h2>Questions about price</h2>
+			<Faq items={faq} />
+		</div>
+	</section>
+
+	<CtaBand />
+</Page>

@@ -1,60 +1,157 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import { Image } from "astro:assets";
+import Page from "../layouts/Page.astro";
+import CtaBand from "../components/CtaBand.astro";
+import victor from "../assets/victor.png";
+import consuelo from "../assets/victor-consuelo.jpeg";
 ---
 
-<Layout
-	title="About Me: A Giant in the Natural Paradise"
-	description="Meet Viktor, a photographer and digital creator who fell in love with Asturias and decided to make it home."
-	pubDate={new Date('March 29 2026')}
-	heroImage="/blog-placeholder-about.jpg"
+<Page
+	title="About · Víctor Kuminov"
+	description="Hi, I'm Víctor. 20 years in digital, a two-senior studio with Nina, and a story that ties me to Asturias in northern Spain."
 >
-	<h2>¡Hola! Welcome to My Asturian Corner</h2>
+	<section class="hero hero--page">
+		<div class="container about-hero">
+			<div>
+				<p class="eyebrow">About</p>
+				<h1>Hi, I'm Víctor</h1>
+				<p class="lead">
+					I got into this almost by accident. I was looking for someone to build a website the way I
+					imagined it, and nobody got it right. So I built it myself. My friends saw it, asked for
+					theirs, and that was more than 20 years ago.
+				</p>
+				<p>
+					Since school I've been passionate about advertising: while others went out partying, I went
+					to trade fairs and to the big agencies' award shows, BBDO and Leo Burnett. That mix of
+					creativity and business is still how I work.
+				</p>
+			</div>
+			<figure>
+				<Image src={victor} alt="Víctor Kuminov" widths={[360, 520, 720]} sizes="(min-width: 900px) 420px, 90vw" loading="eager" class="portrait" />
+			</figure>
+		</div>
+	</section>
 
-	<p>
-		My name is <strong>Viktor</strong>, and if you happen to see a 194cm tall man in the streets of Avilés 
-		or on the trails of Picos de Europa, capturing misty landscapes with genuine awe — that is likely me.
-	</p>
+	<section class="section section--alt">
+		<div class="container split">
+			<div>
+				<p class="eyebrow">The studio</p>
+				<h2>Two seniors, zero middlemen</h2>
+			</div>
+			<div>
+				<p class="lead">
+					Behind every project are <strong>Nina and me</strong>. Nina, my wife, is an exceptional
+					developer: she was one of the first developers at one of the major e-commerce platforms, and
+					she sees whole systems, where they fail and how to fix them.
+				</p>
+				<h3>Why a two-person studio and not an agency?</h3>
+				<p>
+					Because at an agency your project goes through a salesperson, an account manager and a
+					junior learning on your money. Here you talk to the person who designs and the person who
+					builds. Every project carries my name, and that's the best guarantee it will come out
+					flawless.
+				</p>
+			</div>
+		</div>
+	</section>
 
-	<p>
-		Three years ago, I moved to Asturias, and that decision completely transformed my life. You know, 
-		there are places you visit as a tourist, and then there are places that get under your skin and 
-		become a part of who you are. For me, Asturias has become that home. Over these years, I have 
-		gone from being a spellbound newcomer to someone who truly believes this region is 
-		"Spain’s best-kept secret."
-	</p>
+	<section class="section">
+		<div class="container split">
+			<div>
+				<p class="eyebrow">How I work</p>
+				<h2>I tell you the truth, even when it doesn't suit me</h2>
+			</div>
+			<div>
+				<p class="lead">
+					I'll tell you where you're overspending, what won't work in your case, and when it's worth
+					investing and when it isn't.
+				</p>
+				<p>
+					<strong>I work for my reputation, not to bill more.</strong> If you're not satisfied, I redo
+					it or give you your money back.
+				</p>
+			</div>
+		</div>
+	</section>
 
-	<p>
-		I am absolutely in love with this land: its defiant greenery, the wild Cantabrian Sea, 
-		the scent of cider in local sidrerías, and that specific authenticity that is hard to find 
-		in mainstream tourist hubs.
-	</p>
+	<section class="section section--alt">
+		<div class="container split">
+			<div>
+				<p class="eyebrow">Experience</p>
+				<h2>20 years, 100+ projects</h2>
+			</div>
+			<div>
+				<ul class="checks">
+					<li>20 years in digital and more than 100 projects.</li>
+					<li>International brands such as <strong>LG</strong>, <strong>Sisley</strong> and <strong>Toyota</strong>.</li>
+					<li><strong>Platinum partner</strong> of a leading e-commerce platform.</li>
+					<li>An in-house online store platform, with its own admin panel, chat sales and an AI assistant.</li>
+					<li>A client who has been with me for more than 10 years.</li>
+				</ul>
+				<p class="muted" style="margin-top:1.5rem">
+					Languages: I work in English, Spanish and Russian, in writing, and in German through my
+					team. Fully remote, with clients across Spain, Europe and beyond.
+				</p>
+			</div>
+		</div>
+	</section>
 
-	<hr />
+	<section class="section">
+		<div class="narrow prose">
+			<p class="eyebrow">My story</p>
+			<h2 style="margin-top:0">What ties me to Asturias</h2>
+			<p>
+				My grandmother's best friend was one of the Asturian children the Spanish Civil War sent far
+				from home, all the way to Russia. She was fond of him all her life. And, leaving politics
+				aside, life brought me, her grandson, to Asturias. Like a circle closing.
+			</p>
+			<p>
+				I arrived almost by chance. I lived in Barcelona for six months and never quite felt at home:
+				too hot, too crowded, too little nature. At the hotel someone told me about Asturias, and I came
+				to see it. I got off the plane, took the bus, saw the landscape and fell in love at first
+				sight. The next day I was already looking for a flat so I could stay. I found one I liked and
+				bought it that same day, without looking at any other.
+			</p>
+			<p>
+				Asturias gives me back something of my childhood: the smells, the views, the calm. Not long
+				ago I met <strong>Consuelo Argüelles</strong>, author of <em>"Mi odisea en la URSS"</em>, one
+				of those war children. The story my grandmother used to tell me suddenly had a face and a name.
+			</p>
+			<figure style="margin:2.5rem 0">
+				<Image src={consuelo} alt="Víctor with Consuelo Argüelles, author of Mi odisea en la URSS" widths={[400, 680]} sizes="(min-width: 800px) 680px, 92vw" class="portrait" />
+				<figcaption>With Consuelo Argüelles, author of "Mi odisea en la URSS".</figcaption>
+			</figure>
+			<h3>My mission</h3>
+			<p>
+				What I did for that craft manufacturer, I want to do here: take what Asturias does so well to
+				the whole world, and show the world this land and its people.
+				<a href="/sell-worldwide">Here's how</a>.
+			</p>
+		</div>
+	</section>
 
-	<h3>Why I Decided to Start This Blog</h3>
+	<CtaBand title="Shall we talk?" />
+</Page>
 
-	<p>
-		Living in a place like this and not sharing its beauty feels almost like a crime. 
-		My professional background is in digital technology and content creation, so the desire 
-		to systematize my knowledge of Asturias and turn it into a useful resource felt 
-		like a natural progression.
-	</p>
-
-	<p>In this blog, I will be:</p>
-	<ul>
-		<li><strong>Showing Hidden Gems:</strong> The beaches and villages that don't make it into the standard guidebooks.</li>
-		<li><strong>Sharing Practical Insights:</strong> What it’s actually like to build a life in Asturias, from navigating insurance to adapting to the local pace.</li>
-		<li><strong>Exploring Culture and Gastronomy:</strong> Why Asturian cuisine is so much more than just fabada, and how to pour cider correctly.</li>
-		<li><strong>Discovering the Region Together:</strong> Through my lens and personal experiences.</li>
-	</ul>
-
-	<hr />
-
-	<p>
-		I have been here for three years, yet Asturias continues to surprise me every single day. 
-		I am ready to be your guide through this incredible "Natural Paradise." Subscribe, 
-		ask questions, and let’s uncover Northern Spain together.
-	</p>
-
-	<p><strong>Puxa Asturies!</strong></p>
-</Layout>
+<style>
+	.about-hero {
+		display: grid;
+		gap: var(--s5);
+		align-items: center;
+	}
+	@media (min-width: 900px) {
+		.about-hero {
+			grid-template-columns: 1fr 400px;
+			gap: var(--s6);
+		}
+	}
+	.about-hero .portrait {
+		aspect-ratio: 4 / 5;
+		max-width: 400px;
+	}
+	@media (max-width: 899px) {
+		.about-hero .portrait {
+			max-width: 280px;
+		}
+	}
+</style>

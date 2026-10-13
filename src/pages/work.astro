@@ -1,0 +1,149 @@
+---
+import Page from "../layouts/Page.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Arrow from "../components/Arrow.astro";
+
+const cases = [
+	{
+		tag: "Owned store · Chat sales · AI",
+		title: "Tactical gear",
+		before: "A store on a rented platform with an annual fee.",
+		after: "274 products on its own platform, a panel with live stock and 360° photos. Then came a mini-store on Telegram and an AI assistant that recommends gear by compatibility and prepares the order.",
+		link: "/ai",
+	},
+	{
+		tag: "Migration · New design · Blog · App",
+		title: "Wine and tableware group",
+		before: "Four websites on rented platforms, with a high annual fee and abandoned blogs.",
+		after: "The group's site moved to its own platform with a new design, and the domain and email switched without a minute of downtime. We launched the blogs: 24 articles, some of them grown from their Telegram channel. And the first version of their mobile app.",
+		link: "/platform-migration",
+	},
+	{
+		tag: "Made-to-measure calculator",
+		title: "Made-to-measure folding doors",
+		before: "Prices lived in a PDF and customers couldn't work out what their door would cost.",
+		after: "A calculator on the site gives the price by opening size, colour and hardware: 4,185 combinations. Orders arrive by email, on Telegram and in a spreadsheet.",
+		link: "/online-stores",
+	},
+	{
+		tag: "Migration · Photos · AI",
+		title: "Fashion store, 37 brands",
+		before: "A heavy, slow website, the catalogue in a back-office system and 1.1 GB of photos.",
+		after: "677 products on a fast site with filters and photos 86% lighter. 413 products without a description got one from AI, based on their photos and specs. 736 redirects from the old addresses.",
+		link: "/platform-migration",
+	},
+];
+---
+
+<Page
+	title="Work · Víctor Kuminov"
+	description="Real results: a craft manufacturer selling in 40+ countries, stores moved without losing rankings, AI assistants and experience with LG, Sisley and Toyota."
+>
+	<section class="hero hero--page">
+		<div class="container">
+			<p class="eyebrow">Work</p>
+			<h1>Results, not promises</h1>
+			<p class="lead">I've spent more than 20 years making businesses sell online. Here's the proof, with numbers you can check.</p>
+		</div>
+	</section>
+
+	<section class="section section--dark">
+		<div class="container">
+			<p class="eyebrow">Featured case</p>
+			<h2 class="star-title">From a century-old workshop to sales in 40+ countries</h2>
+			<div class="split split--even star">
+				<div>
+					<p>
+						A historic craft manufacturer had spent <strong>six months</strong> with an online store
+						built by someone else. They had invested a lot of money and it sold nothing: the project
+						had got lost in complexity and in goals that led nowhere.
+					</p>
+					<p>
+						I saw what was really needed and offered a deal: <strong>I'll get it running in under a
+						month for a fraction of what you paid. If it doesn't work, you don't pay me.</strong>
+					</p>
+				</div>
+				<div>
+					<p>
+						It worked from the first month. More than ten years later they're still with me and their
+						sales grow every year. Their pieces travel from New Zealand and Bali to Australia, the
+						Americas and all of Europe.
+					</p>
+					<p>I run the store, the advertising, social media and search.</p>
+				</div>
+			</div>
+			<ul class="metrics">
+				<li><b>1 month</b>from a dead store to sales</li>
+				<li><b>10+ years</b>still a client</li>
+				<li><b>40+</b>countries with active sales</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="section-head">
+				<p class="eyebrow">Recent projects</p>
+				<h2>Before and after</h2>
+				<p>Clients on the in-house platform I build on. No names, real numbers.</p>
+			</div>
+			<div class="grid grid--2">
+				{cases.map((c) => (
+					<a class="card case" href={c.link}>
+						<span class="eyebrow">{c.tag}</span>
+						<h3>{c.title}</h3>
+						<p class="muted"><strong>Before.</strong> {c.before}</p>
+						<p><strong>Now.</strong> {c.after}</p>
+					</a>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--alt">
+		<div class="container split">
+			<div>
+				<p class="eyebrow">Big brands</p>
+				<h2>LG · Sisley · Toyota</h2>
+			</div>
+			<div>
+				<p class="lead">
+					Launching and supporting high-traffic stores, communications and events for big brands.
+					I know how the big players work, and I bring that standard to businesses that want to grow.
+				</p>
+				<p>For LG I launched their online store and supported it for a full year: tech, advertising and analytics.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container split">
+			<h2>Your project could be the next case on this page</h2>
+			<div>
+				<p class="lead">Tell me what you have and what you want to achieve. I'll say what I would do, what it would cost and how long it would take.</p>
+				<div class="btn-row">
+					<a class="btn btn--primary" href="/contact">Tell me about your project <Arrow /></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<CtaBand />
+</Page>
+
+<style>
+	.star-title {
+		font-size: clamp(2.4rem, 1.4rem + 4vw, 4.6rem);
+		max-width: 18ch;
+		margin-bottom: var(--s5);
+	}
+	.star {
+		gap: var(--s4);
+	}
+	.case .eyebrow {
+		margin-bottom: 0.4rem;
+	}
+	.case h3 {
+		margin-bottom: 0.4rem;
+	}
+</style>

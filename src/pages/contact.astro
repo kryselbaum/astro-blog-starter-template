@@ -1,0 +1,99 @@
+---
+import Page from "../layouts/Page.astro";
+import Arrow from "../components/Arrow.astro";
+import { WHATSAPP_URL, WHATSAPP_PHONE, CONTACT_EMAIL, CONTACT_CITY, TELEGRAM_URL } from "../consts";
+
+const needs = ["Landing page or company website", "Online store", "Move my store to one I own", "iOS and Android app", "Rescue a project", "AI for my business", "QR menu for a restaurant", "SEO or maintenance", "Something else"];
+const budgets = ["€3,000-6,000", "€6,000-15,000", "€15,000-40,000", "Over €40,000", "Not sure yet"];
+---
+
+<Page
+	title="Contact · Víctor Kuminov"
+	description="Tell me about your project. I reply within 24 hours with an honest first opinion. WhatsApp, Telegram, email and contact form."
+>
+	<section class="hero hero--page">
+		<div class="container split">
+			<div>
+				<p class="eyebrow">Contact</p>
+				<h1>Tell me about your project</h1>
+				<p class="lead">
+					I reply within 24 hours with an honest first opinion: what I would do in your place, and
+					whether you really need it.
+				</p>
+				<div class="btn-row">
+					<a class="btn btn--primary" href={WHATSAPP_URL}>Message me on WhatsApp <Arrow /></a>
+					<a class="btn btn--ghost" href={TELEGRAM_URL}>Telegram</a>
+				</div>
+				<dl class="contact-list">
+					<dt>WhatsApp</dt><dd><a href={WHATSAPP_URL}>{WHATSAPP_PHONE}</a></dd>
+					<dt>Email</dt><dd><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></dd>
+					<dt>Studio</dt><dd>{CONTACT_CITY}. Working remotely with clients across Spain, Europe and beyond.</dd>
+					<dt>Languages</dt><dd>English, Spanish, Russian. In writing.</dd>
+				</dl>
+			</div>
+
+			<div class="card">
+				<h2 class="form-title">Or leave your details</h2>
+				<form id="contact-form" class="form">
+					<div class="row">
+						<label>Name<input type="text" name="name" autocomplete="name" required /></label>
+						<label>Company <span class="opt">(optional)</span><input type="text" name="company" autocomplete="organization" /></label>
+					</div>
+					<div class="row">
+						<label>Email<input type="email" name="email" autocomplete="email" required /></label>
+						<label>Phone <span class="opt">(optional)</span><input type="tel" name="phone" autocomplete="tel" /></label>
+					</div>
+					<label>What do you need?
+						<select name="need">{needs.map((n) => <option>{n}</option>)}</select>
+					</label>
+					<label>Approximate budget
+						<select name="budget">{budgets.map((b) => <option>{b}</option>)}</select>
+					</label>
+					<label>Tell me about your project<textarea name="message" rows="5"></textarea></label>
+					<label class="check">
+						<input type="checkbox" name="gdpr" required />
+						<span>I have read and accept the <a href="/legal/privacy">privacy policy</a>.</span>
+					</label>
+					<button class="btn btn--primary" type="submit">Send: I reply within 24 h <Arrow /></button>
+					<p class="muted small" style="margin:0">Your email app will open with the message ready to send. No spam, no commitment.</p>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<script is:inline define:vars={{ CONTACT_EMAIL }}>
+		document.getElementById("contact-form")?.addEventListener("submit", (e) => {
+			e.preventDefault();
+			const f = e.target;
+			const v = (n) => (f[n]?.value || "").trim();
+			const body =
+				`Name: ${v("name")}\nCompany: ${v("company")}\nEmail: ${v("email")}\nPhone: ${v("phone")}\n` +
+				`Need: ${v("need")}\nBudget: ${v("budget")}\n\n${v("message")}`;
+			const subject = `Project from vickum.com: ${v("name")}`;
+			location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+		});
+	</script>
+</Page>
+
+<style>
+	.contact-list {
+		margin: var(--s5) 0 0;
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		gap: 0.6rem 1.5rem;
+	}
+	.contact-list dt {
+		font-size: 0.78rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--muted);
+		padding-top: 0.2rem;
+	}
+	.contact-list dd {
+		margin: 0;
+	}
+	.form-title {
+		font-size: 2rem;
+		margin-bottom: var(--s3);
+	}
+</style>

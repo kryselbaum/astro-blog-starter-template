@@ -1,0 +1,37 @@
+---
+import Page from "../../layouts/Page.astro";
+import { CONTACT_EMAIL } from "../../consts";
+---
+
+<Page title="Privacy policy · Víctor Kuminov" description="Privacy policy for vickum.com">
+	<section class="section">
+		<div class="narrow prose">
+			<h1>Privacy policy</h1>
+			<p class="muted">Draft pending review by an adviser before final publication.</p>
+
+			<p><strong>Data controller:</strong> Victor Kuminov (NIE Z0785899V) · <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
+
+			<h3>What data do I collect?</h3>
+			<p>The data you give me through the contact form or by WhatsApp, Telegram or email: your name, contact details and information about your business.</p>
+
+			<h3>What for?</h3>
+			<p>Only to reply to you and, where applicable, to provide my services. I don't use it for anything else.</p>
+
+			<h3>Legal basis</h3>
+			<p>Your consent when you write to me or send the form (GDPR, Article 6(1)(a)).</p>
+
+			<h3>How long?</h3>
+			<p>As long as needed to handle your request and our professional relationship.</p>
+
+			<h3>Do I share your data?</h3>
+			<p>I don't sell or pass your data to third parties. Only the technical providers needed for the website to work are used.</p>
+
+			<h3>Your rights</h3>
+			<p>
+				You can access, correct or delete your data and exercise your other GDPR rights by writing to
+				<a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. You can also lodge a complaint with
+				the Spanish Data Protection Agency, AEPD (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).
+			</p>
+		</div>
+	</section>
+</Page>

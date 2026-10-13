@@ -7,8 +7,13 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://example.com",
+	site: "https://vickum.com",
 	integrations: [mdx(), sitemap()],
+	// Old blog template pages
+	redirects: {
+		"/blog": "/services",
+		"/blog/[...slug]": "/services",
+	},
 	adapter: cloudflare({
 		platformProxy: {
 			enabled: true,

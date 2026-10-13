@@ -1,0 +1,58 @@
+---
+import Page from "../layouts/Page.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { services, groups, extras, type Group } from "../data/services";
+
+const order: Group[] = ["build", "ai", "sector", "grow"];
+---
+
+<Page
+	title="Services · Víctor Kuminov"
+	description="Landing pages, company websites, owned online stores, iOS and Android apps, project rescue, AI for business, QR menus for restaurants, SEO and AI visibility, maintenance."
+>
+	<section class="hero hero--page">
+		<div class="container">
+			<p class="eyebrow">Services</p>
+			<h1>What I do for your business</h1>
+			<p class="lead">
+				I don't sell technology. I sell a business that works online. And I'll tell you honestly
+				what you need and what you don't, even when it's not in my interest.
+			</p>
+		</div>
+	</section>
+
+	{order.map((g, i) => (
+		<section class:list={["section", "section--tight", { "section--alt": i % 2 === 0 }]}>
+			<div class="container">
+				<div class="section-head">
+					<h2>{groups[g].title}</h2>
+					<p>{groups[g].text}</p>
+				</div>
+				<div class="grid grid--3">
+					{services.filter((s) => s.group === g).map((s) => <ServiceCard service={s} />)}
+				</div>
+			</div>
+		</section>
+	))}
+
+	<section class="section">
+		<div class="container">
+			<div class="section-head">
+				<h2>Also</h2>
+				<p>Smaller jobs I also take on, one-off or as part of maintenance.</p>
+			</div>
+			<div class="grid grid--4">
+				{extras.map((e) => (
+					<div class="card card--plain">
+						<h3>{e.title}</h3>
+						<p>{e.text}</p>
+					</div>
+				))}
+			</div>
+			<p style="margin-top:2rem"><a class="link-arrow" href="/platform">Everything every store includes, with its real status</a></p>
+		</div>
+	</section>
+
+	<CtaBand title="Not sure where to start?" text="Tell me about your situation and I'll say what I would do. If what you need is smaller than you thought, I'll tell you that too." />
+</Page>
