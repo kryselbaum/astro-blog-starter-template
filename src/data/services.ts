@@ -50,10 +50,10 @@ export const services: Service[] = [
 		group: "build",
 		name: "Lightning-fast landing pages",
 		short: "Custom sales pages that load in under a second and turn visitors into customers.",
-		price: "from €2,900",
+		price: "from €1,200",
 		metaTitle: "Lightning-fast landing pages that convert · Víctor Kuminov",
 		metaDescription:
-			"Custom sales pages and company websites: original design, under one second to load, delivered in 2-3 weeks. From €2,900 + VAT.",
+			"Custom sales pages and company websites: original design, under one second to load, delivered in 2-3 weeks. From €1,200 + VAT.",
 		h1: "Lightning-fast landing pages that convert",
 		lead: "Custom sales pages with original design and a single goal: turning a visit into a customer. They load in under a second, and you can measure that yourself.",
 		forWhom: [
@@ -83,10 +83,10 @@ export const services: Service[] = [
 			},
 		],
 		pricing: {
-			price: "from €2,900",
+			price: "from €1,200",
 			notes: [
-				"Landing page: €2,900-6,000, delivered in 2-3 weeks.",
-				"Multi-page company website: from €4,900, 3-5 weeks.",
+				"Landing page: €1,200-2,500, delivered in 2-3 weeks.",
+				"Multi-page company website: from €2,400, 3-5 weeks.",
 				"Fixed price and deadline before we start.",
 			],
 		},
@@ -111,10 +111,10 @@ export const services: Service[] = [
 		group: "build",
 		name: "Lightweight online stores",
 		short: "A fast e-commerce site that's easy to run and belongs to you: pay once, no monthly rent.",
-		price: "from €7,500",
+		price: "from €3,900",
 		metaTitle: "Lightweight, fast online stores · Víctor Kuminov",
 		metaDescription:
-			"An online store you own, with no monthly platform fees. Your own admin panel, payments and shipping. From €7,500 + VAT. Selling in 40+ countries.",
+			"An online store you own, with no monthly platform fees. Your own admin panel, payments and shipping. From €3,900 + VAT. Selling in 40+ countries.",
 		h1: "Lightweight online stores that are fast and easy to run",
 		lead: "An e-commerce site that sells from day one, that your team runs without depending on anyone, and that is yours. You pay for development once, with no monthly platform fee.",
 		forWhom: [
@@ -164,9 +164,9 @@ export const services: Service[] = [
 			text: "My longest-standing client has been selling with the store I built for more than 10 years. Today it sells in more than 40 countries.",
 		},
 		pricing: {
-			price: "from €7,500",
+			price: "from €3,900",
 			notes: [
-				"Typical project: €7,500-18,000.",
+				"Typical project: €3,900-9,000.",
 				"Timeline: 4-8 weeks.",
 				"Afterwards you only pay for hosting and, if you want, a maintenance plan.",
 			],
@@ -247,8 +247,8 @@ export const services: Service[] = [
 		pricing: {
 			price: "fixed quote",
 			notes: [
-				"Set after the audit (€450, deducted from the project).",
-				"If you also want a new design, it's priced as an online store: from €7,500.",
+				"Set after the audit (€290, deducted from the project).",
+				"If you also want a new design, it's priced as an online store: from €3,900.",
 			],
 		},
 		faq: [
@@ -322,10 +322,10 @@ export const services: Service[] = [
 		group: "build",
 		name: "Project rescue",
 		short: "Paid for a website that doesn't sell? I find out why and get it working.",
-		price: "from €2,500",
+		price: "from €1,200",
 		metaTitle: "Rescue for websites and stores that don't sell · Víctor Kuminov",
 		metaDescription:
-			"Your website or store doesn't sell, or was left half-finished. €450 strategic audit and rescue from €2,500 + VAT. I redo it or refund you.",
+			"Your website or store doesn't sell, or was left half-finished. €290 strategic audit and rescue from €1,200 + VAT. I redo it or refund you.",
 		h1: "Your website doesn't sell. I find out why and fix it.",
 		lead: "I fix what others couldn't. If you paid for a website or a store that never sold, or someone left it half-done, that's exactly what I do.",
 		forWhom: [
@@ -357,10 +357,10 @@ export const services: Service[] = [
 			text: "A historic craft manufacturer had spent six months with a store that sold nothing. I relaunched it in under a month, for a fraction of what they had paid. More than ten years later they're still with me.",
 		},
 		pricing: {
-			price: "from €2,500",
+			price: "from €1,200",
 			notes: [
-				"Entry point: strategic audit, €450. If you hire me for the rescue, it's fully deducted.",
-				"Typical rescue: €2,500-8,000.",
+				"Entry point: strategic audit, €290. If you hire me for the rescue, it's fully deducted.",
+				"Typical rescue: €1,200-4,000.",
 			],
 		},
 		faq: [
@@ -445,11 +445,11 @@ export const services: Service[] = [
 		group: "sector",
 		name: "QR menus and table ordering",
 		short: "For restaurants, cider houses and bars: guests scan, order from the table and the waiter gets it instantly.",
-		price: "custom quote",
+		price: "from €490",
 		badge: "demo",
 		metaTitle: "QR menu and table ordering for restaurants · Víctor Kuminov",
 		metaDescription:
-			"Digital menu with a QR code and ordering from the table, nothing to install. The waiter gets the order with the table number. For restaurants, cider houses and bars.",
+			"Digital menu with a QR code and ordering from the table, nothing to install. The waiter gets the order with the table number. For restaurants, cider houses and bars. From €490 + VAT.",
 		h1: "Digital menus and ordering from the table",
 		lead: "For restaurants, cider houses, bars and cafés. Guests scan the code on the table, see the menu on their phone without installing anything, and order. The waiter receives the order with the table number.",
 		blocks: [
@@ -472,8 +472,11 @@ export const services: Service[] = [
 			},
 		],
 		pricing: {
-			price: "custom quote",
-			notes: ["Depends on the number of tables, languages and whether the menu is view-only or for ordering too."],
+			price: "from €490",
+			notes: [
+				"QR menu with table cards: from €490. With ordering to the waiter, the price depends on the number of tables and languages.",
+				"Hosting, admin panel and support: €29/month.",
+			],
 		},
 		faq: [
 			{
@@ -492,7 +495,7 @@ export const services: Service[] = [
 		group: "sector",
 		name: "Sell your product worldwide",
 		short: "A multilingual store and international shipping for producers, makers and craft brands.",
-		price: "from €7,500",
+		price: "from €3,900",
 		metaTitle: "Sell your products worldwide: multilingual online store · Víctor Kuminov",
 		metaDescription:
 			"A multilingual online store, international payments and per-country shipping for producers and makers. I did it for a craft manufacturer that now sells in 40+ countries.",
@@ -522,7 +525,7 @@ export const services: Service[] = [
 			text: "A historic craft manufacturer has been selling with my store for more than ten years. Its pieces ship to New Zealand, Bali, Australia, the Americas and all over Europe.",
 		},
 		pricing: {
-			price: "from €7,500",
+			price: "from €3,900",
 			notes: [
 				"Priced as an online store, with the languages and countries you need.",
 				"Translating a store you already have: quoted on catalogue size.",
@@ -575,8 +578,8 @@ export const services: Service[] = [
 			price: "from €100/mo",
 			notes: [
 				"AI visibility: €100-150/month as a maintenance add-on.",
-				"Ongoing technical SEO and content: included in the Growth plan (€950/month).",
-				"One-off SEO audit: part of the strategic audit (€450).",
+				"Ongoing technical SEO and content: included in the Growth plan (€190/month).",
+				"One-off SEO audit: part of the strategic audit (€290).",
 			],
 		},
 		faq: [
@@ -596,10 +599,10 @@ export const services: Service[] = [
 		group: "grow",
 		name: "Maintenance and support",
 		short: "Your site checked every day, always up to date, with someone who answers. Your tech team, without hiring one.",
-		price: "from €490/mo",
+		price: "from €79/mo",
 		metaTitle: "Website maintenance and monthly support · Víctor Kuminov",
 		metaDescription:
-			"Care, Growth and Partner maintenance plans: daily monitoring, backups, security, improvements and priority support. From €490/month + VAT.",
+			"Care, Growth and Partner maintenance plans: daily monitoring, backups, security, improvements and priority support. From €79/month + VAT.",
 		h1: "Maintenance: your tech team, without hiring one",
 		lead: "Launching the site is the beginning. After that someone has to watch it, update it and handle your changes. That someone is me.",
 		blocks: [
@@ -617,12 +620,12 @@ export const services: Service[] = [
 			},
 		],
 		pricing: {
-			price: "from €490/mo",
+			price: "from €79/mo",
 			notes: [
-				"Care, €490/month: updates, security, backups, priority support and up to 3 hours of changes a month.",
-				"Growth, €950/month: everything in Care plus conversion experiments, technical SEO and a monthly report.",
-				"Partner, €1,900/month: your external tech team, with a bank of hours and quarterly strategy.",
-				"One-off work without a plan: €90/h, packs from 5 hours.",
+				"Care, €79/month: daily monitoring, updates, security, backups and written support. Changes billed separately.",
+				"Growth, €190/month: everything in Care plus 2 hours of changes a month, technical SEO and a monthly report.",
+				"Partner, €490/month: your external tech team, with 6 hours of work a month, priority and quarterly strategy.",
+				"One-off work without a plan: €60/h, packs from 5 hours.",
 			],
 		},
 		faq: [
@@ -653,10 +656,10 @@ export const extras = [
 	},
 	{
 		title: "Strategic audit",
-		text: "Tech, design and conversion of your website, store or app, with a clear written report. €450, deducted from the project.",
+		text: "Tech, design and conversion of your website, store or app, with a clear written report. €290, deducted from the project.",
 	},
 	{
 		title: "One-off work",
-		text: "Specific fixes and changes without a monthly plan. €90/h, packs from 5 hours.",
+		text: "Specific fixes and changes without a monthly plan. €60/h, packs from 5 hours.",
 	},
 ];
